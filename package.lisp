@@ -15,4 +15,6 @@
    :<
    :>
    :<=
-   :>=))
+   :>=
+   :with-template
+   :lambda-template))
