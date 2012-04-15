@@ -99,12 +99,3 @@
               (? inf t)))))
 
 ;;; TODO /=, min, max, minusp, plusp, abs, ...
-
-(<= 1 2 3)
-(<= 1 2 (inf))
-(<= 1 2 (inf) 3)
-(<= (-inf) (inf))
-
-(> 2 1)
-
-(cl:<=)
