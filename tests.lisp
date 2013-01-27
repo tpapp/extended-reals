@@ -45,11 +45,11 @@
 
 (addtest (extended-reals-tests)
   relation-cornet-cases-test
-  (ensure-relation-corner-cases xr:= xr:< xr:> xr:>= xr:<=))
+  (ensure-relation-corner-cases xreal:= xreal:< xreal:> xreal:>= xreal:<=))
 
 (addtest (extended-reals-tests)
   strict-inequalities-test
-  (ensure-paired-relation (xr:< xr:>)
+  (ensure-paired-relation (xreal:< xreal:>)
     ;; < pairs
     (1 2)
     (1 (inf))
@@ -59,7 +59,7 @@
     (1 2 3)
     (1 2 (inf))
     ((-inf) 1 4 (inf)))
-  (ensure-not-paired-relation (xr:< xr:>)
+  (ensure-not-paired-relation (xreal:< xreal:>)
     ;; not < pairs
     (1 1)
     (2 1)
@@ -76,7 +76,7 @@
 
 (addtest (extended-reals-tests)
   inequalities-test
-  (ensure-paired-relation (xr:<= xr:>=)
+  (ensure-paired-relation (xreal:<= xreal:>=)
     ;; <= pairs
     (1 1)
     (1 2)
@@ -91,7 +91,7 @@
     (1 2 (inf))
     (1 (inf) (inf))
     ((-inf) 1 4 (inf)))
-  (ensure-not-paired-relation (xr:<= xr:>=)
+  (ensure-not-paired-relation (xreal:<= xreal:>=)
     ;; not < pairs
     (2 1)
     ((inf) 1)
@@ -103,7 +103,7 @@
 
 (addtest (extended-reals-tests)
   equality-test
-  (ensure-relation xr:=
+  (ensure-relation xreal:=
     ;; = pairs
     (1 1)
     ((inf) (inf))
@@ -112,7 +112,7 @@
     (2 2 2)
     ((inf) (inf) (inf))
     ((-inf) (-inf) (-inf)))
-  (ensure-not-relation xr:=
+  (ensure-not-relation xreal:=
     ;; not = pairs
     (1 2)
     (2 1)

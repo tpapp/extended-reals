@@ -2,7 +2,7 @@
 
 (defpackage #:extended-reals
   (:use #:cl #:alexandria)
-  (:nicknames #:xr)
+  (:nicknames #:xreal)
   (:shadow #:= #:< #:> #:<= #:>=)
   (:export
    :inf
