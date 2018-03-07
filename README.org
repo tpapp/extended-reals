@@ -1,3 +1,0 @@
-#+TITLE: Extended real numbers for Common Lisp
-#+AUTHOR: Tamas K. Papp <tkpapp@gmail.com>
-
